@@ -5,8 +5,13 @@ import { getSession } from '@/lib/auth';
 export async function middleware(request: NextRequest) {
   const path = request.nextUrl.pathname;
 
-  // Protect teacher routes
-  if (path.startsWith('/teachers') && !path.startsWith('/teachers/page')) {
+  // Public routes that don't require authentication
+  const publicTeacherRoutes = ['/teachers'];
+  const publicStudentRoutes = ['/students'];
+  const publicParentRoutes = ['/parents'];
+
+  // Protect teacher routes (except public pages)
+  if (path.startsWith('/teachers') && !publicTeacherRoutes.includes(path)) {
     const session = await getSession();
     
     if (!session) {
@@ -18,8 +23,8 @@ export async function middleware(request: NextRequest) {
     }
   }
 
-  // Protect student routes
-  if (path.startsWith('/students') && !path.startsWith('/students/page')) {
+  // Protect student routes (except public pages)
+  if (path.startsWith('/students') && !publicStudentRoutes.includes(path)) {
     const session = await getSession();
     
     if (!session) {
@@ -31,8 +36,8 @@ export async function middleware(request: NextRequest) {
     }
   }
 
-  // Protect parent routes
-  if (path.startsWith('/parents') && !path.startsWith('/parents/page')) {
+  // Protect parent routes (except public pages)
+  if (path.startsWith('/parents') && !publicParentRoutes.includes(path)) {
     const session = await getSession();
     
     if (!session) {

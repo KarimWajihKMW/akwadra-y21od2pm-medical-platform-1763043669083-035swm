@@ -21,6 +21,20 @@ export default function LoginPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
+    
+    // Validate email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setError('يرجى إدخال بريد إلكتروني صحيح');
+      return;
+    }
+
+    // Validate password
+    if (password.length < 6) {
+      setError('كلمة المرور يجب أن تكون 6 أحرف على الأقل');
+      return;
+    }
+
     setLoading(true);
 
     try {
@@ -33,7 +47,14 @@ export default function LoginPage() {
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.error || 'Login failed');
+        // Handle specific error cases
+        if (response.status === 503) {
+          throw new Error('قاعدة البيانات غير متاحة حالياً. يرجى المحاولة لاحقاً.');
+        }
+        if (response.status === 401) {
+          throw new Error('البريد الإلكتروني أو كلمة المرور غير صحيحة');
+        }
+        throw new Error(data.error || 'فشل تسجيل الدخول. يرجى المحاولة مرة أخرى.');
       }
 
       // Redirect to dashboard based on role
@@ -47,7 +68,8 @@ export default function LoginPage() {
         router.push('/dashboard');
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'فشل تسجيل الدخول');
+      console.error('Login error:', err);
+      setError(err instanceof Error ? err.message : 'حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى.');
     } finally {
       setLoading(false);
     }
