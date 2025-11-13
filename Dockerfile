@@ -61,4 +61,4 @@ USER nextjs
 
 EXPOSE 3000
 
-CMD ["sh", "/app/scripts/start.sh"]
+CMD ["sh", "./scripts/start.sh"]
