@@ -1,6 +1,6 @@
 # Multi-stage build for Zakerly Educational Platform
 FROM node:18-alpine AS deps
-RUN apk add --no-cache libc6-compat openssl
+RUN apk add --no-cache libc6-compat openssl1.1-compat
 WORKDIR /app
 
 # Install dependencies
@@ -9,7 +9,7 @@ RUN npm ci
 
 # Builder stage
 FROM node:18-alpine AS builder
-RUN apk add --no-cache libc6-compat openssl
+RUN apk add --no-cache libc6-compat openssl1.1-compat
 WORKDIR /app
 
 COPY --from=deps /app/node_modules ./node_modules
@@ -28,6 +28,9 @@ RUN npm run build
 # Runner stage
 FROM node:18-alpine AS runner
 WORKDIR /app
+
+# Install OpenSSL 1.1 compatibility library for Prisma
+RUN apk add --no-cache openssl1.1-compat
 
 ENV NODE_ENV production
 ENV NEXT_TELEMETRY_DISABLED 1
