@@ -1,0 +1,140 @@
+{
+  "app": {
+    "name": "Zakerly",
+    "description": "Advanced Intelligent Educational Platform",
+    "welcome": "Welcome to Zakerly"
+  },
+  "nav": {
+    "home": "Home",
+    "teachers": "Teachers",
+    "students": "Students",
+    "parents": "Parents",
+    "library": "Library",
+    "exams": "Exams",
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout",
+    "dashboard": "Dashboard"
+  },
+  "hero": {
+    "title": "Zakerly Smart Educational Platform",
+    "subtitle": "Learn Smart with AI Assistant",
+    "description": "An advanced educational platform that combines curriculum and artificial intelligence to provide a unique learning experience",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "features": {
+    "title": "Platform Features",
+    "aiAssistant": {
+      "title": "AI Assistant",
+      "description": "Smart assistant that explains curriculum and answers student inquiries"
+    },
+    "textToSpeech": {
+      "title": "Text to Speech",
+      "description": "Read educational content with natural voice using OpenAI technology"
+    },
+    "autoCorrection": {
+      "title": "Auto Correction",
+      "description": "Automatically correct errors using artificial intelligence"
+    },
+    "parentDashboard": {
+      "title": "Parent Dashboard",
+      "description": "Track academic performance and educational progress of students"
+    },
+    "curriculum": {
+      "title": "Curriculum Management",
+      "description": "Comprehensive system for managing curricula, classes, and academic years"
+    },
+    "assignments": {
+      "title": "Assignments & Exams",
+      "description": "Electronic system for assignments and exams with performance tracking"
+    }
+  },
+  "auth": {
+    "login": "Login",
+    "signup": "Create New Account",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "fullName": "Full Name",
+    "role": "Role",
+    "teacher": "Teacher",
+    "student": "Student",
+    "parent": "Parent",
+    "submit": "Submit",
+    "forgotPassword": "Forgot Password?",
+    "haveAccount": "Have an account?",
+    "noAccount": "Don't have an account?",
+    "loginHere": "Login here",
+    "signupHere": "Sign up here"
+  },
+  "dashboard": {
+    "welcome": "Welcome, {{name}}",
+    "overview": "Overview",
+    "courses": "Courses",
+    "students": "Students",
+    "assignments": "Assignments",
+    "exams": "Exams",
+    "performance": "Performance",
+    "upload": "Upload File",
+    "uploadCurriculum": "Upload Curriculum",
+    "uploadLesson": "Upload Lesson",
+    "statistics": "Statistics"
+  },
+  "teacher": {
+    "title": "Teacher Dashboard",
+    "uploadMaterial": "Upload Educational Material",
+    "manageCourses": "Manage Courses",
+    "viewStudents": "View Students",
+    "createAssignment": "Create Assignment",
+    "createExam": "Create Exam",
+    "grades": "Grades"
+  },
+  "student": {
+    "title": "Student Platform",
+    "myCourses": "My Courses",
+    "myAssignments": "My Assignments",
+    "myExams": "My Exams",
+    "myGrades": "My Grades",
+    "askAI": "Ask AI Assistant",
+    "readAloud": "Read Aloud",
+    "progress": "My Progress"
+  },
+  "parent": {
+    "title": "Parent Dashboard",
+    "childPerformance": "Student Performance",
+    "reports": "Reports",
+    "attendance": "Attendance",
+    "grades": "Grades",
+    "behavior": "Behavior",
+    "communication": "Communicate with Teachers"
+  },
+  "library": {
+    "title": "Lesson Library",
+    "searchPlaceholder": "Search for a lesson or subject...",
+    "filterByGrade": "Filter by Grade",
+    "filterBySubject": "Filter by Subject",
+    "allGrades": "All Grades",
+    "allSubjects": "All Subjects"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Operation completed successfully",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "download": "Download",
+    "upload": "Upload",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "close": "Close"
+  }
+}
