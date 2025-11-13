@@ -1,0 +1,140 @@
+{
+  "app": {
+    "name": "ذاكرلي",
+    "description": "منصة تعليمية ذكية متطورة",
+    "welcome": "مرحباً بك في ذاكرلي"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "teachers": "المعلمون",
+    "students": "الطلاب",
+    "parents": "أولياء الأمور",
+    "library": "المكتبة",
+    "exams": "الامتحانات",
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب",
+    "logout": "تسجيل الخروج",
+    "dashboard": "لوحة التحكم"
+  },
+  "hero": {
+    "title": "منصة ذاكرلي التعليمية الذكية",
+    "subtitle": "تعلم بذكاء مع مساعد الذكاء الاصطناعي",
+    "description": "منصة تعليمية متطورة تجمع بين المناهج الدراسية والذكاء الاصطناعي لتقديم تجربة تعليمية فريدة",
+    "getStarted": "ابدأ الآن",
+    "learnMore": "اعرف المزيد"
+  },
+  "features": {
+    "title": "ميزات المنصة",
+    "aiAssistant": {
+      "title": "مساعد ذكي",
+      "description": "مساعد ذكي يشرح المناهج ويجيب على استفسارات الطلاب"
+    },
+    "textToSpeech": {
+      "title": "قارئ صوتي",
+      "description": "قراءة المحتوى التعليمي بصوت طبيعي باستخدام تقنية OpenAI"
+    },
+    "autoCorrection": {
+      "title": "تصحيح تلقائي",
+      "description": "تصحيح الأخطاء تلقائياً باستخدام الذكاء الاصطناعي"
+    },
+    "parentDashboard": {
+      "title": "لوحة أولياء الأمور",
+      "description": "متابعة الأداء الأكاديمي والتقدم التعليمي للطلاب"
+    },
+    "curriculum": {
+      "title": "إدارة المناهج",
+      "description": "نظام شامل لإدارة المناهج والفصول والأعوام الدراسية"
+    },
+    "assignments": {
+      "title": "الواجبات والامتحانات",
+      "description": "نظام إلكتروني للواجبات والامتحانات مع تتبع الأداء"
+    }
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب جديد",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "fullName": "الاسم الكامل",
+    "role": "الدور",
+    "teacher": "معلم",
+    "student": "طالب",
+    "parent": "ولي أمر",
+    "submit": "إرسال",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "haveAccount": "لديك حساب؟",
+    "noAccount": "ليس لديك حساب؟",
+    "loginHere": "سجل دخولك هنا",
+    "signupHere": "أنشئ حساباً هنا"
+  },
+  "dashboard": {
+    "welcome": "مرحباً، {{name}}",
+    "overview": "نظرة عامة",
+    "courses": "المقررات",
+    "students": "الطلاب",
+    "assignments": "الواجبات",
+    "exams": "الامتحانات",
+    "performance": "الأداء",
+    "upload": "رفع ملف",
+    "uploadCurriculum": "رفع منهج دراسي",
+    "uploadLesson": "رفع درس",
+    "statistics": "الإحصائيات"
+  },
+  "teacher": {
+    "title": "لوحة تحكم المعلم",
+    "uploadMaterial": "رفع مادة تعليمية",
+    "manageCourses": "إدارة المقررات",
+    "viewStudents": "عرض الطلاب",
+    "createAssignment": "إنشاء واجب",
+    "createExam": "إنشاء امتحان",
+    "grades": "الدرجات"
+  },
+  "student": {
+    "title": "منصة الطالب",
+    "myCourses": "مقرراتي",
+    "myAssignments": "واجباتي",
+    "myExams": "امتحاناتي",
+    "myGrades": "درجاتي",
+    "askAI": "اسأل المساعد الذكي",
+    "readAloud": "اقرأ بصوت عالٍ",
+    "progress": "تقدمي"
+  },
+  "parent": {
+    "title": "لوحة تحكم ولي الأمر",
+    "childPerformance": "أداء الطالب",
+    "reports": "التقارير",
+    "attendance": "الحضور",
+    "grades": "الدرجات",
+    "behavior": "السلوك",
+    "communication": "التواصل مع المعلمين"
+  },
+  "library": {
+    "title": "مكتبة الدروس",
+    "searchPlaceholder": "ابحث عن درس أو مادة...",
+    "filterByGrade": "تصفية حسب الصف",
+    "filterBySubject": "تصفية حسب المادة",
+    "allGrades": "جميع الصفوف",
+    "allSubjects": "جميع المواد"
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ",
+    "success": "تمت العملية بنجاح",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "view": "عرض",
+    "download": "تحميل",
+    "upload": "رفع",
+    "search": "بحث",
+    "filter": "تصفية",
+    "sort": "ترتيب",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "submit": "إرسال",
+    "close": "إغلاق"
+  }
+}
