@@ -27,6 +27,19 @@ export default function SignupPage() {
     e.preventDefault();
     setError('');
 
+    // Validate email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setError('يرجى إدخال بريد إلكتروني صحيح');
+      return;
+    }
+
+    // Validate full name
+    if (formData.fullName.trim().length < 3) {
+      setError('الاسم الكامل يجب أن يكون 3 أحرف على الأقل');
+      return;
+    }
+
     if (formData.password !== formData.confirmPassword) {
       setError('كلمات المرور غير متطابقة');
       return;
@@ -49,7 +62,11 @@ export default function SignupPage() {
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.error || 'Signup failed');
+        // Handle specific error cases
+        if (response.status === 503) {
+          throw new Error('قاعدة البيانات غير متاحة حالياً. يرجى المحاولة لاحقاً.');
+        }
+        throw new Error(data.error || 'فشل إنشاء الحساب. يرجى المحاولة مرة أخرى.');
       }
 
       // Redirect to dashboard based on role
@@ -63,7 +80,8 @@ export default function SignupPage() {
         router.push('/dashboard');
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'فشل إنشاء الحساب');
+      console.error('Signup error:', err);
+      setError(err instanceof Error ? err.message : 'حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى.');
     } finally {
       setLoading(false);
     }
