@@ -1,5 +1,6 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -13,11 +14,13 @@ import {
   PlusCircle,
   TrendingUp,
   Calendar,
-  Award
+  Award,
+  BarChart3
 } from 'lucide-react';
 
 export default function TeacherDashboard() {
   const t = useTranslations();
+  const router = useRouter();
 
   const stats = [
     { label: 'المقررات النشطة', value: '12', icon: BookOpen, color: 'text-blue-600' },
@@ -56,54 +59,133 @@ export default function TeacherDashboard() {
         </div>
 
         {/* Quick Actions */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-          <Card className="hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer bg-gradient-to-br from-blue-50 to-blue-100">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <Card 
+            className="hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer bg-gradient-to-br from-blue-50 to-blue-100"
+            onClick={() => router.push('/teachers/courses')}
+          >
             <CardHeader>
               <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-2">
-                <Upload className="h-6 w-6 text-white" />
+                <BookOpen className="h-6 w-6 text-white" />
               </div>
-              <CardTitle>رفع محتوى تعليمي</CardTitle>
+              <CardTitle>إدارة المقررات</CardTitle>
               <CardDescription>
-                قم برفع دروس أو مواد تعليمية جديدة
+                إنشاء وإدارة المقررات الدراسية
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                رفع الآن
+              <Button 
+                className="w-full bg-blue-600 hover:bg-blue-700"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  router.push('/teachers/courses');
+                }}
+              >
+                الانتقال للمقررات
               </Button>
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer bg-gradient-to-br from-green-50 to-green-100">
+          <Card 
+            className="hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer bg-gradient-to-br from-indigo-50 to-indigo-100"
+            onClick={() => router.push('/teachers/lessons')}
+          >
+            <CardHeader>
+              <div className="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-2">
+                <Upload className="h-6 w-6 text-white" />
+              </div>
+              <CardTitle>إدارة الدروس</CardTitle>
+              <CardDescription>
+                رفع وتنظيم المحتوى التعليمي
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Button 
+                className="w-full bg-indigo-600 hover:bg-indigo-700"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  router.push('/teachers/lessons');
+                }}
+              >
+                إدارة الدروس
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card 
+            className="hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer bg-gradient-to-br from-green-50 to-green-100"
+            onClick={() => router.push('/teachers/assignments')}
+          >
             <CardHeader>
               <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-2">
                 <PlusCircle className="h-6 w-6 text-white" />
               </div>
-              <CardTitle>إنشاء واجب</CardTitle>
+              <CardTitle>إدارة الواجبات</CardTitle>
               <CardDescription>
-                أنشئ واجباً جديداً للطلاب
+                إنشاء وتقييم واجبات الطلاب
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Button className="w-full bg-green-600 hover:bg-green-700">
-                إنشاء واجب
+              <Button 
+                className="w-full bg-green-600 hover:bg-green-700"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  router.push('/teachers/assignments');
+                }}
+              >
+                إدارة الواجبات
               </Button>
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer bg-gradient-to-br from-purple-50 to-purple-100">
+          <Card 
+            className="hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer bg-gradient-to-br from-purple-50 to-purple-100"
+            onClick={() => router.push('/teachers/exams')}
+          >
             <CardHeader>
               <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-2">
                 <Award className="h-6 w-6 text-white" />
               </div>
-              <CardTitle>إنشاء امتحان</CardTitle>
+              <CardTitle>إدارة الامتحانات</CardTitle>
               <CardDescription>
-                أنشئ امتحاناً جديداً وحدد موعده
+                إنشاء وجدولة الامتحانات
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Button className="w-full bg-purple-600 hover:bg-purple-700">
-                إنشاء امتحان
+              <Button 
+                className="w-full bg-purple-600 hover:bg-purple-700"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  router.push('/teachers/exams');
+                }}
+              >
+                إدارة الامتحانات
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card 
+            className="hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer bg-gradient-to-br from-orange-50 to-orange-100"
+            onClick={() => router.push('/teachers/analytics')}
+          >
+            <CardHeader>
+              <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mb-2">
+                <BarChart3 className="h-6 w-6 text-white" />
+              </div>
+              <CardTitle>التحليلات والإحصائيات</CardTitle>
+              <CardDescription>
+                تتبع أداء الطلاب والمقررات
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Button 
+                className="w-full bg-orange-600 hover:bg-orange-700"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  router.push('/teachers/analytics');
+                }}
+              >
+                عرض التحليلات
               </Button>
             </CardContent>
           </Card>
