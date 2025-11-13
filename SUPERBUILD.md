@@ -5,40 +5,62 @@
 # Project Modification Request
 
 ## User Request
-جميع الازرار و الانتقالات لا تعمل, يجب ان يكون كل شئ يعمل بكفاءة, فقط حسابات المعلمين يستطيعون إدارة المحتوى التعليمي, من رفع, تعديل, نشر, تحليل, وضع امتحانات و اضف كل الخصائص التي تجعل هذه المنصة قوية و فريده
+مش عارف انشئ حساب عشان اجرب الموقع
 
 ## Analysis & Requirements
-أرى المشكلة! التطبيق لا يعمل بسبب خطأ في ملف البدء المفقود. سأقوم بإصلاح هذه المشكلة وبناء منصة تعليمية قوية وفريدة حسب وصفك.
+User: The deployed application is not working properly. Please analyze the deployment logs below and create a fix:
 
-فهمت! منصة تعليمية متكاملة للمعلمين والطلاب 🎯
+[2025-11-13T15:33:14.000Z] INFO: [DEPLOY] Starting Container
+[2025-11-13T15:33:14.952Z] ERROR: [DEPLOY] /usr/local/bin/docker-entrypoint.sh: exec: line 11: ./scripts/start.sh: not found
+[2025-11-13T15:33:15.865Z] ERROR: [DEPLOY] /usr/local/bin/docker-entrypoint.sh: exec: line 11: ./scripts/start.sh: not found
+[2025-11-13T15:33:17.177Z] ERROR: [DEPLOY] /usr/local/bin/docker-entrypoint.sh:...
 
-**الميزات الأساسية:**
-✅ نظام إدارة المحتوى التعليمي (للمعلمين فقط)
-✅ رفع وتنظيم الدروس والمواد التعليمية
-✅ إنشاء وإدارة الامتحانات والاختبارات
-✅ تحليل أداء الطلاب والإحصائيات
-✅ نظام تفاعلي للطلاب مع المحتوى
-✅ لوحة تحكم شاملة للمعلمين
-✅ نظام إشعارات ومتابعة التقدم
+User: The deployed application is not working properly. Please analyze the deployment logs below and create a fix:
 
-**الصفحات المقترحة:**
-📄 الصفحة الرئيسية والدخول
-📄 لوحة تحكم المعلم
-📄 إدارة المحتوى والدروس
-📄 إنشاء وإدارة الامتحانات
-📄 واجهة الطلاب للتعلم
-📄 تحليل الأداء والإحصائيات
+[2025-11-13T15:48:09.000Z] INFO: [DEPLOY] Starting Container
+[2025-11-13T15:48:10.931Z] ERROR: [DEPLOY] /usr/local/bin/docker-entrypoint.sh: exec: line 11: ./scripts/start.sh: not found
+[2025-11-13T15:48:12.095Z] ERROR: [DEPLOY] /usr/local/bin/docker-entrypoint.sh: exec: line 11: ./scripts/start.sh: not found
+[2025-11-13T15:48:13.744Z] ERROR: [DEPLOY] /usr/local/bin/docker-entrypoint.sh:...
 
-**التصميم:**
-🎨 تصميم تعليمي احترافي بألوان هادئة (أزرق، أخضر، أبيض) مع واجهة سهلة الاستخدام وتركيز على تجربة التعلم
+User: The deployed application is not working properly. Issue: مش شغال, مش بيفتح
 
-**المميزات الفريدة:**
-🚀 نظام ذكي لتتبع تقدم الطلاب
-🚀 أدوات تفاعلية للتعلم
-🚀 نظام تقييم متطور
-🚀 إحصائيات مفصلة للأداء
+Please analyze the deployment logs below and create a fix:
 
-هل هذا يناسب ما تريد؟ يمكنك تأكيد البدء أو طلب تعديلات.
+[2025-11-13T16:52:06.000Z] INFO: [DEPLOY] Starting Container
+[2025-11-13T16:52:07.196Z] ERROR: [DEPLOY] /usr/local/bin/docker-entrypoint.sh: exec: line 11: ./scripts/start.sh: not found
+[2025-11-13T16:52:07.347Z] ERROR: [DEPLOY] /usr/local/bin/docker-entrypoint.sh: exec: line 11: ./scripts/start.sh: not found
+[2025-11-13T16:52:07.977Z] ERROR: [DEPLOY] /usr/local...
+
+User: جميع الازرار و الانتقالات لا تعمل, يجب ان يكون كل شئ يعمل بكفاءة, فقط حسابات المعلمين يستطيعون إدارة المحتوى التعليمي, من رفع, تعديل, نشر, تحليل, وضع امتحانات و اضف كل الخصائص التي تجعل هذه المنصة قوية و فريده
+
+Ra: 🔨 رَع يعمل على تعديلاتك...
+
+⏱️ **قد يستغرق هذا 30-60 دقيقة**
+سيتم إشعارك عبر البريد الإلكتروني والهاتف بمجرد انتهاء العمل.
+
+🔒 لا يمكن إرسال رسائل جديدة حتى اكتمال التعديل.
+
+Ra: ❌ Failed to fetch
+
+User: مش عارف انشئ حساب عشان اجرب الموقع
+
+Ra: أعتذر، يبدو أن هناك مشكلة في نظام التسجيل. دعني أحلل المشكلة وأصلحها:
+
+🔍 **تحليل المشكلة:**
+- نظام التسجيل لا يعمل
+- الأزرار والانتقالات معطلة
+- مشاكل في النشر (missing start.sh script)
+
+🛠️ **الحلول المطلوبة:**
+1. إصلاح نظام التسجيل والدخول
+2. تفعيل جميع الأزرار والروابط
+3. إصلاح مشكلة النشر
+4. تحسين صلاحيات المعلمين لإدارة المحتوى
+5. إضافة جميع الميزات المطلوبة للمنصة التعليمية
+
+سأقوم الآن بإصلاح جميع هذه المشاكل وإعادة بناء المنصة بشكل كامل مع التأكد من عمل كل شيء بكفاءة.
+
+🔨 رَع يعمل على إص...
 
 ## Database Connection
 
@@ -51,113 +73,81 @@ Use this connection URL if the modification requires database changes, migration
 
 ## Runtime Deployment Logs
 
-Here are the **latest 100 runtime deployment logs** (newest first) showing actual application behavior and errors:
+Here are the **latest 70 runtime deployment logs** (newest first) showing actual application behavior and errors:
 
 ```
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY] prisma:error 
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY] Invalid `prisma.user.findUnique()` invocation:
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY] 
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY] 
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY] Prisma Client could not locate the Query Engine for runtime "linux-musl".
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY] 
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY] This happened because Prisma Client was generated for "linux-musl-openssl-3.0.x", but the actual deployment required "linux-musl".
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY] Add "linux-musl" to `binaryTargets` in the "schema.prisma" file and run `prisma generate` after saving it:
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY] 
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY] generator client {
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY]   provider      = "prisma-client-js"
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY]   binaryTargets = ["native", "linux-musl"]
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY] }
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY] 
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY] The following locations have been searched:
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY]   /app/node_modules/.prisma/client
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY]   /app/node_modules/@prisma/client
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY]   /tmp/prisma-engines
-[2025-11-13T17:45:50.341Z] INFO: [DEPLOY]   /app/prisma
-[2025-11-13T17:45:50.341Z] ERROR: [DEPLOY] Signup error: PrismaClientInitializationError: 
-[2025-11-13T17:45:50.341Z] ERROR: [DEPLOY] Invalid `prisma.user.findUnique()` invocation:
-[2025-11-13T17:45:50.341Z] ERROR: [DEPLOY] 
-[2025-11-13T17:45:50.341Z] ERROR: [DEPLOY] 
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY] 
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY] This happened because Prisma Client was generated for "linux-musl-openssl-3.0.x", but the actual deployment required "linux-musl".
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY] Add "linux-musl" to `binaryTargets` in the "schema.prisma" file and run `prisma generate` after saving it:
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY] 
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY] generator client {
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY]   provider      = "prisma-client-js"
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY]   binaryTargets = ["native", "linux-musl"]
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY] }
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY] 
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY] The following locations have been searched:
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY]   /app/node_modules/.prisma/client
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY]   /app/node_modules/@prisma/client
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY]   /tmp/prisma-engines
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY]   /app/prisma
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY]     at $n.handleRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:7615)
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY]     at $n.handleAndLogRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:6623)
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY]     at $n.request (/app/node_modules/@prisma/client/runtime/library.js:121:6307)
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY]     at async l (/app/node_modules/@prisma/client/runtime/library.js:130:9633)
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY]     at async l (/app/.next/server/app/api/auth/signup/route.js:1:1225)
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY]     at async /app/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:42484
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY]     at async eI.execute (/app/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:32486)
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY]     at async eI.handle (/app/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:43737)
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY]     at async doRender (/app/node_modules/next/dist/server/base-server.js:1333:42)
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY]     at async cacheEntry.responseCache.get.routeKind (/app/node_modules/next/dist/server/base-server.js:1555:28) {
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY]   clientVersion: '5.22.0',
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY]   errorCode: undefined
-[2025-11-13T17:45:50.345Z] ERROR: [DEPLOY] }
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY] prisma:error 
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY] Invalid `prisma.user.findUnique()` invocation:
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY] 
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY]   /tmp/prisma-engines
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY] 
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY]   /app/prisma
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY] Prisma Client could not locate the Query Engine for runtime "linux-musl".
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY] 
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY] This happened because Prisma Client was generated for "linux-musl-openssl-3.0.x", but the actual deployment required "linux-musl".
-[2025-11-13T17:45:56.298Z] ERROR: [DEPLOY] Signup error: PrismaClientInitializationError: 
-[2025-11-13T17:45:56.298Z] ERROR: [DEPLOY] Invalid `prisma.user.findUnique()` invocation:
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY] Add "linux-musl" to `binaryTargets` in the "schema.prisma" file and run `prisma generate` after saving it:
-[2025-11-13T17:45:56.298Z] ERROR: [DEPLOY] 
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY] 
-[2025-11-13T17:45:56.298Z] ERROR: [DEPLOY] 
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY] generator client {
-[2025-11-13T17:45:56.298Z] ERROR: [DEPLOY] Prisma Client could not locate the Query Engine for runtime "linux-musl".
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY]   provider      = "prisma-client-js"
-[2025-11-13T17:45:56.298Z] ERROR: [DEPLOY] 
-[2025-11-13T17:45:56.298Z] ERROR: [DEPLOY] This happened because Prisma Client was generated for "linux-musl-openssl-3.0.x", but the actual deployment required "linux-musl".
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY]   binaryTargets = ["native", "linux-musl"]
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY] }
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY] 
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY] The following locations have been searched:
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY]   /app/node_modules/.prisma/client
-[2025-11-13T17:45:56.298Z] INFO: [DEPLOY]   /app/node_modules/@prisma/client
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY] Add "linux-musl" to `binaryTargets` in the "schema.prisma" file and run `prisma generate` after saving it:
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY] 
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY] generator client {
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY]   provider      = "prisma-client-js"
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY]   binaryTargets = ["native", "linux-musl"]
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY] }
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY] 
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY] The following locations have been searched:
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY]   /app/node_modules/.prisma/client
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY]   /app/node_modules/@prisma/client
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY]   /tmp/prisma-engines
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY]   /app/prisma
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY]     at $n.handleRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:7615)
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY]     at $n.handleAndLogRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:6623)
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY]     at $n.request (/app/node_modules/@prisma/client/runtime/library.js:121:6307)
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY]     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY]     at async l (/app/node_modules/@prisma/client/runtime/library.js:130:9633)
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY]     at async l (/app/.next/server/app/api/auth/signup/route.js:1:1225)
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY]     at async /app/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:42484
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY]     at async eI.execute (/app/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:32486)
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY]     at async eI.handle (/app/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:43737)
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY]     at async doRender (/app/node_modules/next/dist/server/base-server.js:1333:42) {
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY]   clientVersion: '5.22.0',
-[2025-11-13T17:45:56.302Z] ERROR: [DEPLOY]   errorCode: undefined
+[2025-11-13T18:19:58.000Z] INFO: [DEPLOY] Starting Container
+[2025-11-13T18:19:59.621Z] INFO: [DEPLOY] 📦 Generating Prisma Client...
+[2025-11-13T18:19:59.621Z] INFO: [DEPLOY] 🚀 Starting Zakerly Educational Platform...
+[2025-11-13T18:19:59.621Z] INFO: [DEPLOY] ✅ DATABASE_URL detected
+[2025-11-13T18:20:01.072Z] ERROR: [DEPLOY] npm warn exec The following package was not found and will be installed: prisma@6.19.0
+[2025-11-13T18:20:10.822Z] INFO: [DEPLOY] Prisma schema loaded from prisma/schema.prisma
+[2025-11-13T18:20:11.759Z] ERROR: [DEPLOY] Error: 
+[2025-11-13T18:20:11.759Z] ERROR: [DEPLOY] EACCES: permission denied, unlink '/app/node_modules/.prisma/client/index.d.ts'
+[2025-11-13T18:20:11.759Z] ERROR: [DEPLOY] 
+[2025-11-13T18:20:11.759Z] ERROR: [DEPLOY] 
+[2025-11-13T18:20:11.759Z] ERROR: [DEPLOY] npm notice
+[2025-11-13T18:20:11.759Z] ERROR: [DEPLOY] npm notice New major version of npm available! 10.8.2 -> 11.6.2
+[2025-11-13T18:20:11.760Z] ERROR: [DEPLOY] npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.2
+[2025-11-13T18:20:11.760Z] ERROR: [DEPLOY] npm notice To update run: npm install -g npm@11.6.2
+[2025-11-13T18:20:11.760Z] ERROR: [DEPLOY] npm notice
+[2025-11-13T18:20:11.760Z] INFO: [DEPLOY] ⚠️  Prisma generation skipped
+[2025-11-13T18:20:11.760Z] INFO: [DEPLOY] 🔄 Running database migrations...
+[2025-11-13T18:20:12.863Z] ERROR: [DEPLOY] npm warn exec The following package was not found and will be installed: prisma@6.19.0
+[2025-11-13T18:20:15.804Z] INFO: [DEPLOY] Prisma schema loaded from prisma/schema.prisma
+[2025-11-13T18:20:15.804Z] ERROR: [DEPLOY] Error: Prisma schema validation - (get-config wasm)
+[2025-11-13T18:20:15.804Z] ERROR: [DEPLOY] Error code: P1012
+[2025-11-13T18:20:15.804Z] ERROR: [DEPLOY] error: Environment variable not found: DIRECT_URL.
+[2025-11-13T18:20:15.804Z] ERROR: [DEPLOY]   -->  prisma/schema.prisma:12
+[2025-11-13T18:20:15.804Z] ERROR: [DEPLOY]    | 
+[2025-11-13T18:20:15.804Z] ERROR: [DEPLOY] 11 |   url      = env("DATABASE_URL")
+[2025-11-13T18:20:15.804Z] ERROR: [DEPLOY] 12 |   directUrl = env("DIRECT_URL")
+[2025-11-13T18:20:15.804Z] ERROR: [DEPLOY]    | 
+[2025-11-13T18:20:15.804Z] ERROR: [DEPLOY] 
+[2025-11-13T18:20:15.804Z] ERROR: [DEPLOY] Validation Error Count: 1
+[2025-11-13T18:20:15.804Z] ERROR: [DEPLOY] [Context: getConfig]
+[2025-11-13T18:20:15.804Z] ERROR: [DEPLOY] 
+[2025-11-13T18:20:15.804Z] ERROR: [DEPLOY] Prisma CLI Version : 6.19.0
+[2025-11-13T18:20:15.804Z] INFO: [DEPLOY] ⚠️  Migrations skipped or failed
+[2025-11-13T18:20:15.804Z] INFO: [DEPLOY] 🌟 Starting Next.js application...
+[2025-11-13T18:20:15.963Z] INFO: [DEPLOY]    ▲ Next.js 14.1.0
+[2025-11-13T18:20:15.963Z] INFO: [DEPLOY]    - Local:        http://9c4bfa052941:3000
+[2025-11-13T18:20:15.963Z] INFO: [DEPLOY]    - Network:      http://10.242.154.38:3000
+[2025-11-13T18:20:15.963Z] INFO: [DEPLOY] 
+[2025-11-13T18:20:16.041Z] INFO: [DEPLOY]  ✓ Ready in 98ms
+[2025-11-13T18:26:37.566Z] ERROR: [DEPLOY] prisma:warn Prisma failed to detect the libssl/openssl version to use, and may not work as expected. Defaulting to "openssl-1.1.x".
+[2025-11-13T18:26:37.566Z] ERROR: [DEPLOY] Please manually install OpenSSL and try installing Prisma again.
+[2025-11-13T18:26:37.566Z] INFO: [DEPLOY] prisma:error 
+[2025-11-13T18:26:37.566Z] INFO: [DEPLOY] Invalid `prisma.user.findUnique()` invocation:
+[2025-11-13T18:26:37.566Z] INFO: [DEPLOY] 
+[2025-11-13T18:26:37.566Z] INFO: [DEPLOY] 
+[2025-11-13T18:26:37.566Z] INFO: [DEPLOY] Unable to require(`/app/node_modules/.prisma/client/libquery_engine-linux-musl.so.node`).
+[2025-11-13T18:26:37.566Z] INFO: [DEPLOY] The Prisma engines do not seem to be compatible with your system. Please refer to the documentation about Prisma's system requirements: https://pris.ly/d/system-requirements
+[2025-11-13T18:26:37.566Z] INFO: [DEPLOY] 
+[2025-11-13T18:26:37.566Z] INFO: [DEPLOY] Details: Error loading shared library libssl.so.1.1: No such file or directory (needed by /app/node_modules/.prisma/client/libquery_engine-linux-musl.so.node)
+[2025-11-13T18:26:37.566Z] ERROR: [DEPLOY] Signup error: PrismaClientInitializationError: 
+[2025-11-13T18:26:37.566Z] ERROR: [DEPLOY] Invalid `prisma.user.findUnique()` invocation:
+[2025-11-13T18:26:37.566Z] ERROR: [DEPLOY] 
+[2025-11-13T18:26:37.566Z] ERROR: [DEPLOY] 
+[2025-11-13T18:26:37.566Z] ERROR: [DEPLOY] Unable to require(`/app/node_modules/.prisma/client/libquery_engine-linux-musl.so.node`).
+[2025-11-13T18:26:37.566Z] ERROR: [DEPLOY] The Prisma engines do not seem to be compatible with your system. Please refer to the documentation about Prisma's system requirements: https://pris.ly/d/system-requirements
+[2025-11-13T18:26:37.566Z] ERROR: [DEPLOY] 
+[2025-11-13T18:26:37.566Z] ERROR: [DEPLOY] Details: Error loading shared library libssl.so.1.1: No such file or directory (needed by /app/node_modules/.prisma/client/libquery_engine-linux-musl.so.node)
+[2025-11-13T18:26:37.566Z] ERROR: [DEPLOY]     at $n.handleRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:7615)
+[2025-11-13T18:26:37.573Z] ERROR: [DEPLOY]     at $n.handleAndLogRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:6623)
+[2025-11-13T18:26:37.573Z] ERROR: [DEPLOY]     at $n.request (/app/node_modules/@prisma/client/runtime/library.js:121:6307)
+[2025-11-13T18:26:37.573Z] ERROR: [DEPLOY]     at async l (/app/node_modules/@prisma/client/runtime/library.js:130:9633)
+[2025-11-13T18:26:37.573Z] ERROR: [DEPLOY]     at async l (/app/.next/server/app/api/auth/signup/route.js:1:1225)
+[2025-11-13T18:26:37.573Z] ERROR: [DEPLOY]     at async /app/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:42484
+[2025-11-13T18:26:37.573Z] ERROR: [DEPLOY]     at async eI.execute (/app/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:32486)
+[2025-11-13T18:26:37.573Z] ERROR: [DEPLOY]     at async eI.handle (/app/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:43737)
+[2025-11-13T18:26:37.573Z] ERROR: [DEPLOY]     at async doRender (/app/node_modules/next/dist/server/base-server.js:1333:42)
+[2025-11-13T18:26:37.573Z] ERROR: [DEPLOY]     at async cacheEntry.responseCache.get.routeKind (/app/node_modules/next/dist/server/base-server.js:1555:28) {
+[2025-11-13T18:26:37.573Z] ERROR: [DEPLOY]   clientVersion: '5.22.0',
+[2025-11-13T18:26:37.573Z] ERROR: [DEPLOY]   errorCode: undefined
+[2025-11-13T18:26:37.573Z] ERROR: [DEPLOY] }
 ```
 
-
-📝 Note: Showing latest 100 of 101 total runtime log entries
 
 
 ## Instructions for GitHub Copilot
@@ -173,7 +163,7 @@ Please analyze the current repository structure and make the following changes:
 **Important**: This is a MODIFICATION to an existing project, not a new project. Please review the existing codebase before making changes.
 
 ---
-*Generated on: 2025-11-13T17:54:07.559Z*
+*Generated on: 2025-11-13T18:35:18.185Z*
 
 ---
-Generated on: 2025-11-13T17:54:08.044Z
+Generated on: 2025-11-13T18:35:18.730Z
